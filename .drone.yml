@@ -11,7 +11,8 @@ steps:
     settings:
       from_secret: docker_secret
     commands:
-      - docker build . -t veriganet:latest
+      - sleep 5 # give docker enough time to start
+      - docker ps -a
     when:
       event:
         - push
