@@ -7,7 +7,7 @@ steps:
     image: docker:dind
     volumes:
       - name: dockersock
-        path: /var/run/docker.sock
+        path: /var/run
     settings:
       from_secret: docker_secret
     commands:
@@ -16,7 +16,14 @@ steps:
       event:
         - push
 
+services:
+- name: docker
+  image: docker:dind
+  privileged: true
+  volumes:
+  - name: dockersock
+    path: /var/run
+
 volumes:
 - name: dockersock
-  host:
-    path: /var/run/docker.sock
+  temp: {}
