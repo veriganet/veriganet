@@ -18,6 +18,6 @@ steps:
 
 volumes:
 - name: dockersock
-  host:
+  hostPath:
     path: /var/run/docker.sock
     type: Socket
