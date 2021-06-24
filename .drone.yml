@@ -1,0 +1,15 @@
+kind: pipeline
+type: kubernetes
+name: dnscontrol
+
+steps:
+  - name: build-image
+    image: docker:dind
+    settings:
+      from_secret: docker_secret
+    commands:
+      - docker build . -t veriganet:latest
+    when:
+      event:
+        - push
+
