@@ -1,0 +1,30 @@
+apiVersion: skaffold/v2beta9
+kind: Config
+profiles:
+- name: pre
+  deploy:
+    kubectl:
+      manifests:
+        - ./prestg.yaml
+        - ./preprod.yaml
+- name: stg
+  deploy:
+    helm:
+      releases:
+        - name: veriganet-stg
+          chartPath: ./helm-charts/veriganet
+          namespace: veriganet-stg
+          setValues:
+            image.tag: "stg"
+            ingress.host: "stg.veriga.net"
+            vault.role: "veriganet"
+- name: prod
+  deploy:
+    helm:
+      releases:
+        - name: veriganet
+          chartPath: ./helm-charts/veriganet
+          namespace: veriganet
+          setValues:
+            image.tag: "latest"
+            ingress.host: "veriga.net"

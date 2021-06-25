@@ -1,0 +1,13 @@
+replicaCount: 2
+
+image:
+  repository: "registry-aws.veriga.net/veriganet"
+  tag: "latest"
+  pullPolicy: Always
+
+ingress:
+  enabled: true
+
+service:
+  type: ClusterIP
+  port: 80

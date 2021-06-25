@@ -1,0 +1,6 @@
+apiVersion: v2
+name: veriganet
+description: Helm chart for verig.net main web
+type: application
+version: 0.1.0
+appVersion: 0.1.0
