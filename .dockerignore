@@ -1,2 +1,6 @@
 .gitignore
 README.md
+.idea
+.drone.yml
+Dockerfile
+Makefile
