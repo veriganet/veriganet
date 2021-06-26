@@ -30,8 +30,6 @@ services:
 - name: docker
   image: docker:dind
   privileged: true
-  environment:
-    DOCKER_TLS_CERTDIR: ""
   volumes:
   - name: dockersock
     path: /var/run
