@@ -9,19 +9,18 @@ steps:
       - name: dockersock
         path: /var/run
     settings:
-      from_secret: docker_secret
+      from_secret: docker_secret_veriga
     environment:
-      AWS_ACCESS_KEY_ID:
-        from_secret: drone_aws_access_key_id
-      AWS_SECRET_ACCESS_KEY:
-        from_secret: drone_aws_secret_access_key
-      ECR: 776553443280.dkr.ecr.eu-west-1.amazonaws.com
+      DOCKER_API_KEY:
+        from_secret: docker_api_key
+      ECR: veriganet
+      REPO_NAME: veriganet
+      VERSION: latest
     commands:
       - sleep 10 # give docker enough time to start
-      - docker build . -t veriganet:latest
-      - aws ecr get-login-password --region eu-west-1 | docker login --username AWS --password-stdin $ECR
-      - docker tag veriganet:latest $ECR/veriganet:latest
-      - docker push $ECR/veriganet:latest
+      - docker login -u veriganet -p $DOCKER_API_KEY
+      - docker build -t $ECR/$REPO_NAME:$VERSION -f Dockerfile .
+      - docker push $ECR/$REPO_NAME:VERSION
     when:
       event:
         - push

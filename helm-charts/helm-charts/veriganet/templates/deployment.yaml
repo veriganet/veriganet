@@ -28,12 +28,6 @@ spec:
             - name: app-http
               containerPort: 80
               protocol: TCP
-          resources:
-            requests:
-              cpu: "200m"
-              memory: "128Mi"
-            limits:
-              cpu: "350m"
-              memory: "256Mi"
+          resources: {{ toYaml .Values.resources | nindent 12 }}
       imagePullSecrets:
         - name: registry
