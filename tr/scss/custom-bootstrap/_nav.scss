@@ -1,0 +1,110 @@
+.nav { 
+    .nav-link {
+        &.active {
+            color: $nav-link-active-color;
+            background-color: $nav-link-active-bg;
+        }
+    }
+}
+
+//
+// Custom Tabs
+//
+
+.custom-nav-tabs {
+    &.flex-column {
+        .nav-link {
+            margin-bottom: $custom-nav-tabs-nav-link-mb;
+        }
+    }
+    .nav-link {
+        display: flex;
+        padding: $custom-nav-tabs-nav-link-padding-y $custom-nav-tabs-nav-link-padding-x;
+        margin-bottom: -$nav-tabs-border-width;
+        border: $nav-tabs-border-width solid transparent;
+        @include border-radius($border-radius);
+        background-color: $light;
+        align-items: center;
+        .tab-icon {
+            display: inline-block;
+            background-color: $white;
+            width: $custom-nav-tab-icon-width;
+            height: $custom-nav-tab-icon-width;
+            line-height: $custom-nav-tab-icon-line-height;
+            text-align: center;
+            @include border-radius($border-radius);
+            margin-right: $custom-nav-tab-icon-margin-end;
+            color: $gray-600;
+        }
+        .label {
+            flex-grow: 1;
+            margin-right: $custom-nav-tab-label-margin-end;
+            color: $gray-600;
+        }
+        .tab-number {
+            display: inline-block;
+            color: $gray-600;
+            font-weight: $custom-nav-tab-number-fw;
+        }
+
+    &:hover,
+    &:focus {
+        border-color: $light;
+    }
+
+    &.disabled {
+        color: $nav-link-disabled-color;
+        background-color: transparent;
+        border-color: transparent;
+    }
+}
+
+.nav-link.active,
+.nav-item.show .nav-link {
+    color: $nav-tabs-link-active-color;
+    background-color: $light;
+    border-color: $light;
+    .tab-icon {
+        background-color: $primary;
+        color: $white;
+    }
+    .label {
+        font-weight: $custom-nav-tab-label-fw;
+        color: $dark;
+    }
+    .tab-number {
+        color: $dark;
+    }
+}
+
+
+.dropdown-menu {
+    // Make dropdown border overlap tab border
+    margin-top: -$nav-tabs-border-width;
+    // Remove the top rounded corners here since there is a hard edge above the menu
+    @include border-top-radius(0);
+}
+} 
+
+// Underline nav tabs
+.underline-nav-tabs {
+    border-bottom: $underline-nav-tab-border-width $underline-nav-tab-border-style $gray-200; 
+    margin-bottom: $underline-nav-tab-mb;
+    
+    .nav-link {
+        color: $gray-600;
+        border-bottom: 3px solid transparent;
+
+        &:hover,
+        &:focus {
+            color: $primary;
+        }
+
+        &.active {
+            color: $primary;
+            border-color: $primary;
+            font-weight: $font-weight-bold;
+            background-color: transparent;
+        }
+    }
+}

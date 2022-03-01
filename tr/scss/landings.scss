@@ -1,0 +1,182 @@
+// Course Landing page style
+.course-header {
+    background-image: url("../../assets/img/landings/header-bg.svg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+}
+
+.couse-card-1 {
+    width: 205px;
+    position: absolute;
+    top: 11%;
+    left: 4%;
+    margin-left: -25%;
+}
+
+.couse-card-2 {
+    width: 198px;
+    position: absolute;
+    top: 40%;
+    right: 63%;
+    margin-right: 25%;
+}
+
+@include media-breakpoint-between(md, lg) {
+    .course-header {
+        background-image: url("../../assets/img/landings/header-bg-md.svg");
+        background-position-x: center;
+        background-position-y: top;
+    }
+    .couse-card-1 {
+        top: 40%;
+    }
+    
+    .couse-card-2 {
+        top: 40%; 
+        left: 97%;
+        margin-left: -32%;
+    }
+}
+
+@include media-breakpoint-between(sm, md) {
+    .course-header {
+        background-image: url("../../assets/img/landings/header-bg-sm.svg");
+        background-position-x: center;
+        background-position-y: top;
+    }
+    .couse-card-1 {
+        top: 55%;
+        left: 30%;
+    }
+    
+    .couse-card-2 {
+        top: 55%; 
+        left: 75%;
+        margin-left: -24%;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .course-header {
+        background-image: url("../../assets/img/landings/header-bg-sm.svg");
+        background-position-x: center;
+        background-position-y: top;
+    }
+
+    .couse-card-1 {
+        width: 200px;
+        top: 40%;
+        left: 25%;
+    }
+    
+    .couse-card-2 {
+        width: 170px;
+        top: 40%; 
+        left: 80%;
+        margin-left: -22%;
+    }
+}
+
+// Agency Landing Page
+.agency-header {
+    background-size: auto, contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;     
+}
+.agency-service {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 5%;     
+}
+.agency-backgrounds {
+    .bg-1 {
+        top: 0;
+        left: 0%;
+    }
+    .bg-2 {
+        bottom: 45%;
+        left: 8%
+    }
+    .bg-3 {
+        right: 12%; 
+        top: 2%;
+    }
+    .bg-4 {
+        bottom: 3%;
+        right: 0%;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .agency-service {
+        background-image: none !important;
+    }
+    .agency-backgrounds {
+        .bg-2 {
+            bottom: 10%;
+            left: 0;
+        }
+    }
+}
+
+// SASS Landing Page
+.popular {
+    background-color: $primary;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    text-align: center;
+    width: 100%;
+    transform-origin: center;
+    transform: translateX(50%) rotate(45deg);
+    padding: 7px 10px;
+    text-transform: uppercase;
+}
+
+// SASS Landing Page
+.event-header {
+    .bg-1 {
+        top: 5%;
+        left: 5%;
+    }
+    .bg-2 {
+        bottom: 5%;
+        right: -1%
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .event-header {
+        .bg-1 {
+            top: -2%;
+            left: 4%;
+        }
+        .bg-2 {
+            bottom: -2%;
+            right: 2%
+        }
+    }
+}
+
+// contact call to action
+.contact-call-to-action {
+    @include media-breakpoint-up(lg) {
+        background-image: url('../../assets/img/patterns/three-layers-blue.svg');
+    }
+    @include media-breakpoint-between(md, lg) {
+        background-image: url('../../assets/img/patterns/three-layers-blue-md.svg');
+    }
+    @include media-breakpoint-down(md) {
+        background-image: url('../../assets/img/patterns/three-layers-blue-sm.svg');
+    }
+}
+
+// Course Landing page style
+.pricing-header {
+    @include media-breakpoint-up(md) {
+        background-image: url("../../assets/img/patterns/dots-pattern.svg");
+    }
+}

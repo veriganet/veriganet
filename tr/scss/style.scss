@@ -1,0 +1,45 @@
+/*===========================================================
+    Theme Name  - Kithub - Landing page Template + UI Kit
+
+    Copyright 2021 - ballkanlab.com
+========================================================== */
+
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// Required
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// custom bootstrap
+@import "./custom-bootstrap/variables";
+@import "./custom-bootstrap/utilities";
+
+// Bootstrap main
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+//custom
+@import "./custom-bootstrap/accordion";
+@import "./custom-bootstrap/alerts";
+@import "./custom-bootstrap/buttons";
+@import "./custom-bootstrap/badge";
+@import "./custom-bootstrap/forms";
+@import "./custom-bootstrap/list";
+@import "./custom-bootstrap/typo";
+@import "./custom-bootstrap/card";
+@import "./custom-bootstrap/helpers";
+@import "./custom-bootstrap/nav";
+@import "./custom-bootstrap/dropdown";
+@import "./custom-bootstrap/nav";
+@import "./custom-bootstrap/navbar";
+@import "./doc.scss";
+@import "./social-icons.scss";
+@import "./feather.scss";
+@import "./overlay.scss";
+@import "./backgrounds.scss";
+@import "./swiper.scss";
+@import "./avatars.scss";
+@import "./mapbox.scss";
+@import "./countdown.scss";
+@import "./landings.scss";

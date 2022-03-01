@@ -1,0 +1,93 @@
+/* Kithub Custom alert */
+.custom-alert {
+    border-radius: $border-radius;
+    padding: 0!important;
+    background-color: $white;
+    .alert-inner {
+        display: flex;
+    }
+    .alert-icon {
+        display: flex;
+        background-color: $primary-100;
+        color: $primary;
+        align-items: center;
+        margin: $custom-alert-icon-margin;
+        padding: $custom-alert-icon-padding;
+        border-radius: $border-radius;
+    }
+    .alert-content {
+        padding: $custom-alert-content-padding;
+        flex-grow: 1;
+        align-self: center;
+        .alert-title {
+            font-weight: $font-weight-semi-bold;
+            color: $primary;
+            margin-bottom: $custom-alert-title-margin-bottom;
+        }
+    }
+    .alert-close {
+        display: flex;
+        align-items: center;
+        padding: $custom-alert-close-padding;
+        border-left: 1px solid $gray-200;
+        font-size: $font-size-base;
+    }
+
+    /* small alert */
+    &.small-alert {
+        display: inline-block;
+        .alert-content {
+            padding: $custom-alert-content-padding-sm;
+            font-size: $font-size-14;
+            .alert-title {
+                font-size: $font-size-14;
+                margin-bottom: $custom-alert-title-margin-bottom-sm;
+            }
+        }
+        .alert-close {
+            padding: $custom-alert-close-padding-sm;
+            font-size: $font-size-12;
+        }
+    }
+
+    /* update alert */
+    &.update-alert {
+        display: inline-block;
+        .alert-icon {
+            background-color: $white;
+            margin-right: $update-alert-icon-margin-right;
+        }
+        .alert-content {
+            padding: $update-alert-content-padding;
+            .alert-title {
+                margin-bottom: $update-alert-title-mb;
+            }
+        }
+        .alert-close {
+            padding: 0;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: unset;
+            text-align: center;
+            .link {
+                padding: $update-alert-link-padding;
+                display: inline-block;
+                font-size: $font-size-14;
+                text-decoration: none;
+            }
+            hr {
+                background-color: $gray-200;
+                opacity: 1;
+            }
+            button {
+                background: none;
+                border: none;
+                outline: none;
+                color: $secondary-300;
+                &:hover {
+                    color: $dark;
+                }
+            }
+        }
+    }
+}

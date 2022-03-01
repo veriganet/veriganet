@@ -1,0 +1,23 @@
+.overlay {
+    position: relative;
+    &::after {
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+.gradient-primary {
+    &::after { 
+        background: linear-gradient(rgba($primary,0),rgba($primary-200,.65),rgba($secondary-300,.5));
+        z-index: 0;
+    }
+}
+.gradient-dark {
+    &::after { 
+        background: linear-gradient(rgba($dark,0),rgba($secondary-900,.85));
+        z-index: 0;
+    }
+}

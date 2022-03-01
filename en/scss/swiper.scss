@@ -1,0 +1,53 @@
+.custom-swiper {
+    position: inherit;
+}
+.swiper-button-next.kithub-next,
+.swiper-button-prev.kithub-prev {
+    &:after {
+        display: none;
+    }
+    width: 50px;
+    height: 50px;
+    background: $white;
+    border-radius: 50%;
+    border: 1px solid $gray-300;
+    outline: none;
+    color: $dark;
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+    &.swiper-button-disabled {
+        opacity: 1;
+        cursor: auto;
+        pointer-events: none;
+        color: $gray-400;
+    }
+}
+
+// Portfolio swiper
+.portfolio {
+    .swiper-slide {
+        padding: 1em 0.625em 1em 0.625em;
+    }
+}
+
+// Testimonials swiper
+@include media-breakpoint-down(md) {
+    .testimonials {
+        .swiper-button-next.kithub-next,
+        .swiper-button-prev.kithub-prev {
+            top: auto !important;
+            bottom: 30px !important;
+        }
+        .swiper-button-next.kithub-next {
+            right: 8% !important;
+            left: auto !important;
+            transform: translateX(0) !important;
+        }
+        .swiper-button-prev.kithub-prev {
+            left: 8% !important;
+            transform: translateX(0) !important;
+        }
+    }
+}

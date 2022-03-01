@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Landing page template and Ui kit bootstrap template">
+    <meta name="author" content="Ballkanlab">
+    <meta name="robots" content="all,follow">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+    <!-- vendor css File-->
+    <link href="../assets/vendors/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../assets/vendors/prismjs/themes/prism.css" rel="stylesheet">
+    <link href="../assets/vendors/prismjs/plugins/toolbar/prism-toolbar.css" rel="stylesheet">
+    <link href="../assets/vendors/prismjs/plugins/line-numbers/prism-line-numbers.css" rel="stylesheet">
+    <!-- css File-->
+    <link href="../assets/css/style.css?cb=1609790983084" rel="stylesheet">
+    <title>Kithub - Official documentation</title>
+  </head>
+  <body class="dashboard">
+    <!-- Header-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white bg-white sticky-top p-0 border-bottom px-3">
+      <h2 class="fw-bold col-md-3 col-lg-2 me-0 mb-0"><a class="navbar-brand" href="index.html"> <span class="text-primary">Kit</span><span>hub.</span></a></h2>
+      <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-none d-md-flex">
+          <li class="nav-item">
+            <div class="dropdown me-3">
+              <button class="btn btn-outline-gray-200 btn-hover-shadow-gray-100 btn-hover-none text-gray-800 dropdown-toggle" id="dropdownMenuButton" type="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="d-none d-lg-inline">Kithub </span>v1.0</button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="active dropdown-item" href="#">Latest v1.0</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item"><a class="btn btn-primary btn-hover-shadow-primary-100" href="../index.html">Back to Kithub</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar-->
+        <nav class="col-md-3 col-lg-2 d-md-block bg-white sidebar collapse border-end overflow-auto" id="sidebarMenu">
+          <div class="position-sticky px-2">
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center mb-2 text-dark">Getting started</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link active fs-7" aria-current="page" href="index.html">Introduction</a></li>
+              <li class="nav-item"><a class="nav-link fs-7" href="getting-started.html">Getting Started</a></li>
+              <li class="nav-item"><a class="nav-link fs-7" href="changelog.html">Changelog</a></li>
+              <li class="nav-item"><a class="nav-link fs-7" href="credits.html">Credits</a></li>
+            </ul>
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center mb-2 text-dark">Content</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link fs-7" href="typography.html">Typography</a></li>
+              <li class="nav-item"><a class="nav-link fs-7" href="icons.html">Icons</a></li>
+            </ul>
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center mb-2 text-dark">Forms</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link fs-7" href="form-control.html">Form Control</a></li>
+              <li class="nav-item"><a class="nav-link fs-7" href="form-select.html">Select</a></li>
+              <li class="nav-item"><a class="nav-link fs-7" href="form-checks-radio.html">Checks and radios</a></li>
+              <li class="nav-item"><a class="nav-link fs-7" href="form-input-group.html">Input group</a></li>
+              <li class="nav-item"><a class="nav-link fs-7" href="form-floating-label.html">Floating labels</a></li>
+              <li class="nav-item"><a class="nav-link fs-7" href="form-validation.html">Validation</a></li>
+            </ul>
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center mb-2 text-dark">Components</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link fs-7" href="accordion.html">Accordion</a></li>
+              <li class="nav-item"><a class="nav-link fs-7" href="alerts.html">Alerts</a></li>
+              <li class="nav-item"><a class="nav-link fs-7" href="avatars.html">Avatars</a></li>
+              <li class="nav-item"><a class="nav-link fs-7" href="badge.html">Badge</a></li>
+              <li class="nav-item"><a class="nav-link fs-7" href="buttons.html">Buttons</a></li>
+            </ul>
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center mb-2 text-dark">Utilitits</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link fs-7" href="borders.html">Borders</a></li>
+              <li class="nav-item"><a class="nav-link fs-7" href="colors.html">Colors </a></li>
+              <li class="nav-item"><a class="nav-link fs-7" href="shadows.html">Shadows</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Content-->
+        <main class="col-md-9 ms-md-auto mx-lg-auto col-lg-8 px-md-4 py-4">
+          <div class="row">
+            <div class="col-12">
+              <div class="outline-none" data-bs-spy="scroll" data-bs-offset="0" tabindex="0">
+                <h1 class="pt-90px mb-3 mt-n70px" id="colors">Colors.</h1>
+                <p class="lead">Convey meaning through color with a handful of color utility classes. Includes support for styling links with hover states, too.</p><a href="https://getbootstrap.com/docs/5.0/utilities/colors/" target="_blank"><span class="fas fa-external-link-alt me-2"></span>Bootstrap docs</a>
+                <hr class="mb-0 mt-5">
+                <h1 class="pt-90px mb-3" id="textColor">Text Color</h1><span class="text-primary d-inline-block p-2 m-1">.text-primary</span><span class="text-secondary d-inline-block p-2 m-1">.text-secondary</span><span class="text-success d-inline-block p-2 m-1">.text-success</span><span class="text-danger d-inline-block p-2 m-1">.text-danger</span><span class="text-warning bg-dark d-inline-block p-2 m-1">.text-warning</span><span class="text-info bg-dark d-inline-block p-2 m-1">.text-info</span><span class="text-light bg-dark d-inline-block p-2 m-1">.text-light</span><span class="text-gray d-inline-block p-2 m-1">.text-gray</span><span class="text-dark d-inline-block p-2 m-1">.text-dark</span><span class="text-body d-inline-block p-2 m-1">.text-body</span><span class="text-muted d-inline-block p-2 m-1">.text-muted</span><span class="text-white bg-dark d-inline-block p-2 m-1">.text-white</span><span class="text-black-50 d-inline-block p-2 m-1">.text-black-50</span><span class="text-white-50 bg-dark d-inline-block p-2 m-1">.text-white-50</span>
+                <hr class="mb-0 mt-5">
+                <h1 class="pt-90px mb-3" id="textPaletteColors">Text Palette Colors </h1>
+                <div class="row">
+                  <div class="col-12"><span class="text-primary-100 d-inline-block m-2">.text-primary-100</span><span class="text-primary-200 d-inline-block m-2">.text-primary-200</span><span class="text-primary-300 d-inline-block m-2">.text-primary-300</span><span class="text-primary-400 d-inline-block m-2">.text-primary-400</span><span class="text-primary-500 d-inline-block m-2">.text-primary-500</span><span class="text-primary-600 d-inline-block m-2">.text-primary-600</span><span class="text-primary-700 d-inline-block m-2">.text-primary-700</span><span class="text-primary-800 d-inline-block m-2">.text-primary-800</span><span class="text-primary-900 d-inline-block m-2">.text-primary-900</span></div>
+                  <div class="col-12 mt-4"><span class="text-secondary-100 d-inline-block m-2">.text-secondary-100</span><span class="text-secondary-200 d-inline-block m-2">.text-secondary-200</span><span class="text-secondary-300 d-inline-block m-2">.text-secondary-300</span><span class="text-secondary-400 d-inline-block m-2">.text-secondary-400</span><span class="text-secondary-500 d-inline-block m-2">.text-secondary-500</span><span class="text-secondary-600 d-inline-block m-2">.text-secondary-600</span><span class="text-secondary-700 d-inline-block m-2">.text-secondary-700</span><span class="text-secondary-800 d-inline-block m-2">.text-secondary-800</span><span class="text-secondary-900 d-inline-block m-2">.text-secondary-900</span></div>
+                  <div class="col-12 mt-4"><span class="text-success-100 d-inline-block m-2">.text-success-100</span><span class="text-success-200 d-inline-block m-2">.text-success-200</span><span class="text-success-300 d-inline-block m-2">.text-success-300</span><span class="text-success-400 d-inline-block m-2">.text-success-400</span><span class="text-success-500 d-inline-block m-2">.text-success-500</span><span class="text-success-600 d-inline-block m-2">.text-success-600</span><span class="text-success-700 d-inline-block m-2">.text-success-700</span><span class="text-success-800 d-inline-block m-2">.text-success-800</span><span class="text-success-900 d-inline-block m-2">.text-success-900</span></div>
+                  <div class="col-12 mt-4"><span class="text-danger-100 d-inline-block m-2">.text-danger-100</span><span class="text-danger-200 d-inline-block m-2">.text-danger-200</span><span class="text-danger-300 d-inline-block m-2">.text-danger-300</span><span class="text-danger-400 d-inline-block m-2">.text-danger-400</span><span class="text-danger-500 d-inline-block m-2">.text-danger-500</span><span class="text-danger-600 d-inline-block m-2">.text-danger-600</span><span class="text-danger-700 d-inline-block m-2">.text-danger-700</span><span class="text-danger-800 d-inline-block m-2">.text-danger-800</span><span class="text-danger-900 d-inline-block m-2">.text-danger-900</span></div>
+                  <div class="col-12 mt-4"><span class="text-warning-100 d-inline-block m-2">.text-warning-100</span><span class="text-warning-200 d-inline-block m-2">.text-warning-200</span><span class="text-warning-300 d-inline-block m-2">.text-warning-300</span><span class="text-warning-400 d-inline-block m-2">.text-warning-400</span><span class="text-warning-500 d-inline-block m-2">.text-warning-500</span><span class="text-warning-600 d-inline-block m-2">.text-warning-600</span><span class="text-warning-700 d-inline-block m-2">.text-warning-700</span><span class="text-warning-800 d-inline-block m-2">.text-warning-800</span><span class="text-warning-900 d-inline-block m-2">.text-warning-900</span></div>
+                  <div class="col-12 mt-4"><span class="text-gray-100 d-inline-block m-2">.text-gray-100</span><span class="text-gray-200 d-inline-block m-2">.text-gray-200</span><span class="text-gray-300 d-inline-block m-2">.text-gray-300</span><span class="text-gray-400 d-inline-block m-2">.text-gray-400</span><span class="text-gray-500 d-inline-block m-2">.text-gray-500</span><span class="text-gray-600 d-inline-block m-2">.text-gray-600</span><span class="text-gray-700 d-inline-block m-2">.text-gray-700</span><span class="text-gray-800 d-inline-block m-2">.text-gray-800</span><span class="text-gray-900 d-inline-block m-2">.text-gray-900</span></div>
+                </div>
+                <hr class="mb-0 mt-5">
+                <h1 class="pt-90px mb-3" id="backgroundColor">Background color</h1>
+                <div class="row">
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-primary" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-primary</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-secondary" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-secondary</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-success" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-success</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-danger" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-danger</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-warning" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-warning</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-info" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-info</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-light" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-light</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-gray" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-gray</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-dark" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-dark</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-white" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-white</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-transparent" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-transparent</div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-0 mt-5">
+                <h1 class="pt-90px mb-3" id="backgroundColor">Background Palette colors</h1>
+                <div class="row">
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-primary-100" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-primary-100</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-primary-200" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-primary-200</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-primary-300" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-primary-300</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-primary-400" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-primary-400</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-primary-500" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-primary-500</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-primary-600" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-primary-600</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-primary-700" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-primary-700</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-primary-800" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-primary-800</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-primary-900" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-primary-900</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-secondary-100" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-secondary-100</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-secondary-200" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-secondary-200</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-secondary-300" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-secondary-300</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-secondary-400" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-secondary-400</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-secondary-500" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-secondary-500</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-secondary-600" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-secondary-600</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-secondary-700" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-secondary-700</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-secondary-800" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-secondary-800</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-secondary-900" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-secondary-900</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-success-100" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-success-100</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-success-200" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-success-200</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-success-300" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-success-300</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-success-400" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-success-400</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-success-500" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-success-500</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-success-600" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-success-600</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-success-700" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-success-700</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-success-800" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-success-800</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-success-900" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-success-900</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-danger-100" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-danger-100</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-danger-200" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-danger-200</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-danger-300" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-danger-300</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-danger-400" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-danger-400</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-danger-500" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-danger-500</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-danger-600" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-danger-600</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-danger-700" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-danger-700</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-danger-800" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-danger-800</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-danger-900" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-danger-900  </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-warning-100" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-warning-100</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-warning-200" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-warning-200</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-warning-300" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-warning-300</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-warning-400" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-warning-400</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-warning-500" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-warning-500</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-warning-600" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-warning-600</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-warning-700" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-warning-700</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-warning-800" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-warning-800</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-warning-900" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-warning-900</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-gray-100" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-gray-100</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-gray-200" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-gray-200</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-gray-300" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-gray-300</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-gray-400" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-gray-400</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-gray-500" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-gray-500</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-gray-600" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-gray-600</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-gray-700" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-gray-700</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-gray-800" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-gray-800</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-gray-900" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-gray-900</div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-0 mt-5">
+                <h1 class="pt-90px mb-3" id="backgroundGradient">Background gradient</h1>
+                <div class="row">
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-primary bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-primary</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-secondary bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-secondary</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-success bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-success</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-danger bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-danger</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-warning bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-warning</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-info bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-info</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-light bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-light</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-gray bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-gray</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-dark bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-dark</div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-0 mt-5">
+                <h1 class="pt-90px mb-3" id="backgroundPaletteGradient">Background Palette Gradient</h1>
+                <div class="row mt-4">
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-primary-100 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-primary-100</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-primary-200 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-primary-200</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-primary-300 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-primary-300</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-primary-400 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-primary-400</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-primary-500 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-primary-500</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-primary-600 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-primary-600</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-primary-700 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-primary-700</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-primary-800 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-primary-800</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-primary-900 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-primary-900</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-secondary-100 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-secondary-100</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-secondary-200 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-secondary-200</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-secondary-300 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-secondary-300</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-secondary-400 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-secondary-400</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-secondary-500 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-secondary-500</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-secondary-600 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-secondary-600</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-secondary-700 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-secondary-700</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-secondary-800 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-secondary-800</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-secondary-900 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-secondary-900</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-success-100 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-success-100</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-success-200 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-success-200</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-success-300 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-success-300</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-success-400 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-success-400</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-success-500 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-success-500</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-success-600 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-success-600</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-success-700 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-success-700</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-success-800 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-success-800</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-success-900 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-success-900</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-danger-100 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-danger-100</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-danger-200 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-danger-200</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-danger-300 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-danger-300</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-danger-400 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-danger-400</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-danger-500 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-danger-500</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-danger-600 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-danger-600</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-danger-700 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-danger-700</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-danger-800 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-danger-800</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-danger-900 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-danger-900</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-warning-100 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-warning-100</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-warning-200 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-warning-200</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-warning-300 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-warning-300</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-warning-400 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-warning-400</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-warning-500 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-warning-500</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-warning-600 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-warning-600</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-warning-700 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-warning-700</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-warning-800 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-warning-800</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-warning-900 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-warning-900</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-gray-100 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-gray-100</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-gray-200 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-gray-200</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-gray-300 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-gray-300</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-gray-400 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-gray-400</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-gray-500 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-gray-500</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-gray-600 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-gray-600</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-gray-700 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-gray-700</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-gray-800 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-gray-800</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-0 bg-transparent shadow-sm mb-3">
+                      <div class="card-body rounded-top bg-gray-900 bg-gradient" style="height: 6rem;"></div>
+                      <div class="card-body bg-white text-dark">.bg-gray-900</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 filter-nav overflow-auto position-fixed end-0 d-none d-lg-inline-block">
+              <h6 class="mx-2 pb-2 border-bottom">On this page</h6>
+              <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link fs-7 px-2 py-1" href="#colors">Colors</a></li>
+                <li class="nav-item"><a class="nav-link fs-7 px-2 py-1" href="#textColor">Text Color</a></li>
+                <li class="nav-item"><a class="nav-link fs-7 px-2 py-1" href="#textPaletteColors">Text Palette Colors</a></li>
+                <li class="nav-item"><a class="nav-link fs-7 px-2 py-1" href="#backgroundColor">Background color</a></li>
+                <li class="nav-item"><a class="nav-link fs-7 px-2 py-1" href="#backgroundGradient">Background gradient</a></li>
+                <li class="nav-item"><a class="nav-link fs-7 px-2 py-1" href="#paletteColors">Palette Colors</a></li>
+              </ul>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <!-- Footer-->
+    <!-- Javascript vendors-->
+    <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendors/feather-icons/feather.min.js"></script>
+    <script src="../assets/vendors/prismjs/components/prism-core.min.js"></script>
+    <script src="../assets/vendors/prismjs/components/prism-markup.min.js"></script>
+    <script src="../assets/vendors/prismjs/components/prism-clike.min.js"></script>
+    <script src="../assets/vendors/prismjs/components/prism-javascript.min.js"></script>
+    <script src="../assets/vendors/prismjs/components/prism-pug.min.js"></script>
+    <script src="../assets/vendors/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="../assets/vendors/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script src="../assets/vendors/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <!-- Javascript File-->
+    <script src="../assets/js/theme.js"></script>
+    <script>feather.replace()</script>
+  </body>
+</html>
