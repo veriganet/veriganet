@@ -33,6 +33,14 @@ steps:
       event:
         - push
 
+  - name: build-docs-stg
+    image: squidfunk/mkdocs-material
+    commands:
+      - mkdocs build
+    when:
+      event:
+        - push
+
   - name: push-stg
     image: veriganet/dind-awscli
     volumes:
@@ -51,36 +59,6 @@ steps:
       - docker login -u veriganet -p $DOCKER_API_KEY
       - docker build -t $ECR/$REPO_NAME:stg -f Dockerfile_stg .
       - docker push $ECR/$REPO_NAME:stg
-    when:
-      event:
-        - push
-
-  - name: build-docs-stg
-    image: squidfunk/mkdocs-material
-    commands:
-      - mkdocs build
-    when:
-      event:
-        - push
-
-  - name: push-docs-stg
-    image: veriganet/dind-awscli
-    volumes:
-      - name: dockersock
-        path: /var/run
-    settings:
-      from_secret: docker_secret_veriga
-    environment:
-      DOCKER_API_KEY:
-        from_secret: docker_api_key
-      ECR: veriganet
-      REPO_NAME: veriganet
-      VERSION: docs-stg
-    commands:
-      - sleep 10 # give docker enough time to start
-      - docker login -u veriganet -p $DOCKER_API_KEY
-      - docker build -t $ECR/$REPO_NAME:$VERSION -f Dockerfile_docs_stg .
-      - docker push $ECR/$REPO_NAME:$VERSION
     when:
       event:
         - push

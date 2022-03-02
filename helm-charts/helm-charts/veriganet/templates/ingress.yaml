@@ -1,4 +1,4 @@
-{{- if .Values.ingress.enabled -}}
+{{- if .Values.web.ingress.enabled -}}
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
@@ -8,9 +8,9 @@ metadata:
   labels:
     app: {{ .Chart.Name }}
 spec:
-  ingressClassName: {{ .Values.ingress.ingressClassName }}
+  ingressClassName: {{ .Values.web.ingress.ingressClassName }}
   rules:
-    - host: {{ .Values.ingress.host }}
+    - host: {{ .Values.web.ingress.host }}
       http:
         paths:
           - path: /
@@ -19,8 +19,8 @@ spec:
               service:
                 name: {{ .Chart.Name }}
                 port:
-                  number: {{ .Values.service.port }}
-    - host: www.{{ .Values.ingress.host }}
+                  number: {{ .Values.web.service.port }}
+    - host: www.{{ .Values.web.ingress.host }}
       http:
         paths:
           - path: /
@@ -29,5 +29,5 @@ spec:
               service:
                 name: {{ .Chart.Name }}
                 port:
-                  number: {{ .Values.service.port }}
+                  number: {{ .Values.web.service.port }}
 {{- end }}
