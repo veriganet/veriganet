@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- start section -->
+<section class="bg-transparent pb-70px">
+  <div class="container mt-n150px">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="bg-white shadow mt-0">
+          <div class="row gx-0">
+            <div class="col-12 col-lg-6 border-bottom border-bottom-lg-0 border-end border-gray-200 py-35px py-md-45px">
+              <div class="row justify-content-center">
+                <div class="col-11 col-md-10">
+                  <h4 class="fw-medium mb-35px">General information</h4>
+
+                  <ul class="list-unstyled">
+                    <li class="mb-10px">
+                      <h6 class="fw-semi-bold mb-0">- Phone</h6>
+                      <p class="text-dark mb-0">+0123 456 789</p>
+                    </li>
+                    <li class="mb-10px">
+                      <h6 class="fw-semi-bold mb-0">- Email</h6>
+                      <p class="text-dark mb-0">info@example.com</p>
+                    </li>
+                    <li class="mb-10px">
+                      <h6 class="fw-semi-bold mb-0">- Adress</h6>
+                      <p class="text-dark mb-0">102 Street 7014 Josh</p>
+                    </li>
+                    <li>
+                      <h6 class="fw-semi-bold mb-2">- Social</h6>
+                      <ul class="list-inline list-xs social-icons mb-0">
+                        <li class="list-inline-item">
+                          <a class="bg-primary-100" href="javascript:void(0);" target="_blank">
+                            <i class="fab fa-facebook icon text-primary"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="bg-primary-100" href="javascript:void(0);" target="_blank">
+                            <i class="fab fa-twitter icon text-primary"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="bg-primary-100" href="javascript:void(0);" target="_blank">
+                            <i class="fab fa-linkedin icon text-primary"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="bg-primary-100" href="javascript:void(0);" target="_blank">
+                            <i class="fab fa-google icon text-primary"></i>
+                          </a>
+                        </li>
+                      </ul><!-- end social icons -->
+                    </li>
+                  </ul>
+                </div><!-- end col -->
+              </div><!-- end row -->
+            </div><!-- end col -->
+
+            <div class="col-12 col-lg-6 py-35px py-md-45px">
+              <div class="row justify-content-center h-100">
+                <div class="col-11 col-md-10">
+                  <h4 class="fw-medium mb-25px">Let’s start working together</h4>
+
+                  <form>
+                    <div class="row gy-3 gx-4">
+                      <div class="col-12 col-md-6">
+                        <label for="firstName" class="form-label">First name</label>
+                        <input class="form-control form-control-lg" id="firstName" type="text" aria-label="First name">
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <label for="lastName" class="form-label">Last name</label>
+                        <input class="form-control form-control-lg" id="lastName" type="text" aria-label="Last name">
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <label for="emailAddress" class="form-label">Email</label>
+                        <input class="form-control form-control-lg" id="emailAddress" type="email" aria-label="Email Address">
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <label for="phoneNumber" class="form-label">Phone</label>
+                        <input class="form-control form-control-lg" id="phoneNumber" type="text" aria-label="Phone number">
+                      </div>
+                      <div class="col-12">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control form-control-lg" id="message" rows="2"></textarea>
+                      </div>
+                      <div class="col-12 text-end">
+                        <button type="submit" class="btn btn-primary mt-5px">Send Message</button>
+                      </div>
+                    </div><!-- end row -->
+                  </form>
+                </div><!--end col -->
+              </div><!-- end row -->
+            </div><!-- end col -->
+
+            <div class="col-12 position-relative">
+              <!-- Mapbox-->
+              <div class="contact-map" data-toggle="map" data-options='{"center": [-118.244615, 34.052979], "zoom": 12}'></div>
+            </div><!-- end col -->
+          </div><!-- end row -->
+        </div><!-- end bg -->
+      </div><!-- end col -->
+    </div><!-- end row -->
+  </div><!-- end container -->
+</section>
+<!-- end section -->
+{% endblock %}

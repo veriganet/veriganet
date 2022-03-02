@@ -1,7 +1,27 @@
-_model: page
+_model: services
 ---
 title: Services
 ---
-body: All of our services go here!
+body: 
 ---
 _discoverable: yes
+---
+slogan: Blockchain for everyone
+---
+slogandesc: verigaNET is here to launch blockchain for everyone.
+---
+chain:
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem.
+---
+smart:
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem.
+---
+chaintitle: verigaNET Managed Blockchain
+---
+smarttitle: verigaNET Managed Smart Contract Platform
