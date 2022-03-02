@@ -25,6 +25,36 @@ steps:
       event:
         - push
 
+  - name: build-lektor
+    image: softinstigate/lektor
+    commands:
+      - lektor build -O deploy
+    when:
+      event:
+        - push
+
+  - name: push-lektor
+    image: veriganet/dind-awscli
+    volumes:
+      - name: dockersock
+        path: /var/run
+    settings:
+      from_secret: docker_secret_veriga
+    environment:
+      DOCKER_API_KEY:
+        from_secret: docker_api_key
+      ECR: veriganet
+      REPO_NAME: veriganet
+      VERSION: latest
+    commands:
+      - sleep 10 # give docker enough time to start
+      - docker login -u veriganet -p $DOCKER_API_KEY
+      - docker build -t $ECR/$REPO_NAME:stg -f Dockerfile .
+      - docker push $ECR/$REPO_NAME:stg
+    when:
+      event:
+        - push
+
 services:
 - name: docker
   image: docker:dind
