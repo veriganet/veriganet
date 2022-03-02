@@ -1,0 +1,18 @@
+site_name: verigaNET Documentation
+
+theme:
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+  name: material
+  palette:
+    primary: indigo
+
+plugins:
+  - search
