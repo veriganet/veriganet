@@ -3,28 +3,6 @@ type: kubernetes
 name: veriganet
 
 steps:
-  - name: build-push-image
-    image: veriganet/dind-awscli
-    volumes:
-      - name: dockersock
-        path: /var/run
-    settings:
-      from_secret: docker_secret_veriga
-    environment:
-      DOCKER_API_KEY:
-        from_secret: docker_api_key
-      ECR: veriganet
-      REPO_NAME: veriganet
-      VERSION: latest
-    commands:
-      - sleep 10 # give docker enough time to start
-      - docker login -u veriganet -p $DOCKER_API_KEY
-      - docker build -t $ECR/$REPO_NAME:$VERSION -f Dockerfile .
-      - docker push $ECR/$REPO_NAME:$VERSION
-    when:
-      event:
-        - push
-
   - name: build-stg
     image: softinstigate/lektor
     commands:
