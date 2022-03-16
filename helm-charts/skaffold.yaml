@@ -25,5 +25,5 @@ profiles:
             chartPath: ./helm-charts/veriganet
             namespace: veriganet
             setValues:
-              image.tag: latest
-              ingress.host: veriga.net
+              web.image.tag: latest
+              web.ingress.host: veriga.net
