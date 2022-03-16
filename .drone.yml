@@ -20,7 +20,7 @@ steps:
       - sleep 10 # give docker enough time to start
       - docker login -u veriganet -p $DOCKER_API_KEY
       - docker build -t $ECR/$REPO_NAME:$VERSION -f Dockerfile .
-      - docker push $ECR/$REPO_NAME:VERSION
+      - docker push $ECR/$REPO_NAME:$VERSION
     when:
       event:
         - push
