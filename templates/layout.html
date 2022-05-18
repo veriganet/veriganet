@@ -39,6 +39,12 @@
             {% include "partials/welcome-support.html" %}
         {% elif this._path == '/contact' %}
             {% include "partials/welcome-contact.html" %}
+        {% elif this._path == '/contactus' %}
+            {% include "partials/welcome-contactus.html" %}
+        {% elif this._path == '/getstarted' %}
+            {% include "partials/welcome-getstarted.html" %}
+        {% elif this._path == '/faq' %}
+            {% include "partials/welcome-faq.html" %}
         {% endif %}
     </header>
 
@@ -65,7 +71,6 @@
     <script src="{{ '/vendors/jquery-countdown/jquery.countdown.min.js'| asseturl }}"></script>
     <script src="{{ '/vendors/sticky-js/sticky.min.js'| asseturl }}"></script>
     <script src="{{ '/vendors/aos/aos.js'| asseturl }}"></script>
-
     <!-- Javascript File-->
     <script src="{{ '/js/theme.js'| asseturl }}"></script>
     <!--<script src="assets/js/language.js"></script>-->

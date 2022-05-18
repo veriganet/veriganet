@@ -8,20 +8,48 @@ _discoverable: yes
 ---
 slogan: Blockchain for everyone
 ---
-slogandesc: verigaNET is here to launch blockchain for everyone.
+slogandesc: verigaNET is here to launch blockchain for everyone
 ---
-chain:
+block:
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+verigaNET Block is our core blockchain technology. It is best suited for value transfer. 
 
-but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem.
+**Fully Independent**<br/>
+verigaNET Block is fully independent and does not depend on any other blockchains to operate.
+
+**Fully Managed**<br/>
+Launching, running, and maintaining a fully independent blockchain requires a high level of expertise. With managed nature of this service; verigaNET will manage the complexity for you.
+
+**Highly Available**<br/>
+All infrastructure will be deployed in a highly available, multi-region cloud environment on multiple Kubernetes clusters. This high availability is made possible by utilizing the robustness of industry-leading cloud providers such as Amazon Web Services and DigitalOcean.
+
+**Components**<br/>
+- Peering Nodes
+- Representative Nodes
+- Web Wallet
+- Mobile Wallet
+- Native REST API Endpoint
+
+**Some of the use cases**<br/>
+- Stable coin
+- Meme coin
+- Payment systems
+- Loyalty programs
+- In-game crypto currency
 ---
 smart:
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+Write decentralized applications with your own independent blockchain. Creating smart contracts, NFTs, and tokens.
 
-but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem.
+Some of the use cases are;
+- Decentralized / distributed applications
+- None fungible tokens
+- DeFI Applications
 ---
-chaintitle: verigaNET Managed Blockchain
+blocktitle: verigaNET BLOCK
 ---
-smarttitle: verigaNET Managed Smart Contract Platform
+smarttitle: verigaNET SMART
+---
+expert: With 1-on-1 blockchain consultation, learn how to utilize state-of-the-art blockchain technologies with help from our experts.
+---
+experttitle: Blockchain Expertise

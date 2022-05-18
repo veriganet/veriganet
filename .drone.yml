@@ -39,7 +39,9 @@ steps:
       - docker push $ECR/$REPO_NAME:stg
     when:
       event:
-        - push
+        - promote
+      target:
+        - stg
 
   - name: push-prod
     image: veriganet/dind-awscli
@@ -61,7 +63,9 @@ steps:
       - docker push $ECR/$REPO_NAME:$VERSION
     when:
       event:
-        - push
+        - promote
+      target:
+        - prod
 
 services:
   - name: docker
