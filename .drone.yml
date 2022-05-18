@@ -9,7 +9,9 @@ steps:
       - lektor build -O deploy
     when:
       event:
-        - push
+        - promote
+      target:
+        - stg
 
   - name: build-docs-stg
     image: squidfunk/mkdocs-material
@@ -17,7 +19,9 @@ steps:
       - mkdocs build
     when:
       event:
-        - push
+        - promote
+      target:
+        - stg
 
   - name: push-stg
     image: veriganet/dind-awscli
