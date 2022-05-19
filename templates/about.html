@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+{% block content %}
+    <section class="bg-white pt-40px pb-40px">
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+            <h2>Who are we?</h2>
+            {{ this.whoarewe }}
+          </div><!-- end col -->
+        </div><!-- end row -->
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+            <h2>What we do?</h2>
+            {{ this.whatwedo }}
+          </div><!-- end col -->
+        </div><!-- end row -->
+      </div><!-- end container -->
+    </section>
+
+    <!-- start section -->
+    <section class="bg-white pt-40px pt-lg-50px pb-35px pb-lg-40px">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-12">
+            <div class="row">
+              <div class="col-12 text-center">
+                <h1 class="fw-bold mb-10px">Meet our amazing team</h1>
+                <p class="lead">Our expert team is here to help you</p>
+              </div><!-- end col -->
+            </div><!-- end row -->
+
+            <hr class="bg-transparent my-20px" />
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+              <div class="col">
+                <div class="card bg-transparent text-center">
+                  <img src="../img/ferhat.jpeg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h4 class="fw-semi-bold mb-0">Ferhat Ozkasgarli</h4>
+                    <p class="mb-0 text-uppercase">Chief Executive Officer</p>
+                  </div>
+                </div>
+              </div><!-- end col -->
+
+              <div class="col">
+                <div class="card bg-transparent text-center">
+                  <img src="../img/vusal.jpeg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h4 class="fw-semi-bold mb-0">Vusal Gabarov</h4>
+                    <p class="mb-0 text-uppercase">Chief Growth Officer</p>
+                  </div>
+                </div>
+              </div><!-- end col -->
+
+              <div class="col">
+                <div class="card bg-transparent text-center">
+                  <img src="../img/aydin.jpeg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h4 class="fw-semi-bold mb-0">Aydin Tarakci</h4>
+                    <p class="mb-0 text-uppercase">Chief Financial Officer</p>
+                  </div>
+                </div>
+              </div><!-- end col -->
+
+            </div><!-- end row -->
+          </div><!-- end col -->
+        </div><!-- end row -->
+      </div><!-- end container -->
+    </section>
+{% endblock %}

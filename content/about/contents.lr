@@ -1,7 +1,15 @@
-title: About this Website
+title: About Us
 ---
 body:
 
 This is a website that was made with the Lektor quickstart.
 
 And it does not contain a lot of information.
+---
+slogan: Blockchain for Everyone
+---
+slogandesc: We provide blockchain for everyone
+---
+whoarewe: We are blockchain experts.
+---
+whatwedo: We provide managed blockchain as a service.
