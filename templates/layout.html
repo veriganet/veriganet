@@ -55,6 +55,32 @@
     {% endif %}
 
     {% block content %}
+
+    <style>
+    .img-baas {
+      image-rendering: pixelated;
+    }
+    </style>
+    <section class="pt-40px pt-lg-110px pb-50px pb-lg-120px">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-6 pt-90px">
+            <h2>Blockchain as a Service</h2>
+            <hr />
+            <p>Launch your own blockchain and access it immediately.</p>
+            <hr />
+            <p>Integrate your blockchain with powerful native REST API endpoint.</p>
+            <hr />
+            <p>Take advantage of web and mobile wallet services.</p>
+            <hr />
+          </div>
+          <div class="col-6 col-md-6">
+            <img class="img-fluid img-baas" src="{{ '/img/baas_infra.png'| asseturl }}" alt="verigaNET Blockchain as a Service Infrastructure" />
+          </div>
+        </div>
+      </div>
+    </section>
+
     {% endblock%}
 
     {% include "partials/footer.html" %}
