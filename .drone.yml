@@ -47,6 +47,26 @@ steps:
       target:
         - stg
 
+  - name: build-prod
+    image: softinstigate/lektor
+    commands:
+      - lektor build -O deploy
+    when:
+      event:
+        - promote
+      target:
+        - prod
+
+  - name: build-docs-prod
+    image: squidfunk/mkdocs-material
+    commands:
+      - mkdocs build
+    when:
+      event:
+        - promote
+      target:
+        - prod
+
   - name: push-prod
     image: veriganet/dind-awscli
     volumes:
@@ -59,7 +79,7 @@ steps:
         from_secret: docker_api_key
       ECR: veriganet
       REPO_NAME: veriganet
-      VERSION: latest
+      VERSION: prod
     commands:
       - sleep 10 # give docker enough time to start
       - docker login -u veriganet -p $DOCKER_API_KEY
