@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="description" content="verigaNET Blockchain/Cryptocurrency as Service">
+    <meta name="author" content="verigaNET Inc.">
+    <meta name="robots" content="all,follow">
+    <title>verigaNET - Blockchain/Cryptocurrency as Service</title>
+</head>
+<body>
+<script type="application/javascript">
+    window.onload = function() {
+        let stored_lang = localStorage.getItem("stored_lang");
+        if(stored_lang !== null) {
+            window.location.replace(stored_lang+"/index.html");
+        } else {
+            window.location.replace("en/index.html");
+        }
+    }
+</script>
+</body>
+</html>

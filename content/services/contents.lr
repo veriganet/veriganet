@@ -1,0 +1,81 @@
+_model: services
+---
+title: Services
+---
+body: 
+---
+_discoverable: yes
+---
+slogan: Blockchain for everyone
+---
+slogandesc: verigaNET is here to launch blockchain for everyone
+---
+block:
+
+verigaNET Block is our core blockchain technology. Its technology is best suited for projects that requires lean value transfer under subsecond speed.
+
+**Fully Independent**<br/>
+verigaNET Block is fully independent and does not depend on any other technologies to operate.
+
+**Fully Managed**<br/>
+Launching, running, and maintaining a fully independent blockchain requires a high level of expertise and afford. With managed nature of this service; verigaNET will manage the complexity for you.
+
+**Highly Available**<br/>
+All infrastructure will be deployed in a highly available, multi-region cloud environment on multiple Kubernetes clusters. This high availability is made possible by utilizing the robustness of industry-leading cloud providers such as Amazon Web Services and DigitalOcean.
+
+**Components**<br/>
+- Peering Nodes
+- Representative Nodes
+- Web Wallet
+- Mobile Wallet
+- Native REST API Endpoint
+
+**Some of the use cases**<br/>
+- Stable coins
+- Meme coins
+- Payment systems
+- Loyalty programs
+- In-game crypto currency
+---
+smart:
+
+Write decentralized applications with your own independent blockchain. Creating smart contracts, NFTs, and tokens.
+
+Some of the use cases are;
+- Decentralized / distributed applications
+- None fungible tokens
+- DeFI Applications
+-  Intellectual Property
+- Identity
+- Supply chain
+---
+blocktitle: verigaNET BLOCK
+---
+smarttitle: verigaNET SMART
+---
+expert: With 1-on-1 blockchain consultation, learn how to utilize state-of-the-art blockchain technologies with help from our experts.
+---
+experttitle: Blockchain Expertise
+---
+multiassetwallet:
+
+Manage all cryptocurrency assets launched with verigaNET from a single app. 
+
+**Some of the Features:** <br />
+- Buy Crypto With a Card
+- Exchange Instantly
+- Private & Secure
+
+---
+multiassetwallettitle: verigaNET ASSET
+---
+tradeplatformtitle: verigaNET TRADE
+---
+tradeplatform:
+
+verigaNET TRADE cryptocurrency exchange software hosted and operated by us. All the crypto assets created with verigaNET can be traded on this platform without a hassle.
+
+**Some of the Features:**
+- Managed & secured by verigaNET team
+- Fully open source
+- Private deployment on premise or on cloud

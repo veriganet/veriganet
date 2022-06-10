@@ -1,0 +1,64 @@
+//
+// Check/radio
+//
+  
+.form-check-input {
+  &:checked {
+    &[disabled],
+    &:disabled {
+      &[type="checkbox"] {
+        @if $enable-gradients {
+          background-image: escape-svg($form-check-input-checked-disabled-bg-image), var(--#{$variable-prefix}gradient);
+        } @else {
+          background-image: escape-svg($form-check-input-checked-disabled-bg-image);
+        }
+        border-color: $form-check-radio-checked-border-color;
+      }
+
+      &[type="radio"] {
+        @if $enable-gradients {
+          background-image: escape-svg($form-check-radio-checked-disabled-bg-image), var(--#{$variable-prefix}gradient);
+        } @else {
+          background-image: escape-svg($form-check-radio-checked-disabled-bg-image);
+        }
+        border-color: $form-check-radio-checked-border-color;
+      }
+    }
+  }
+
+  &[disabled],
+  &:disabled {
+    &[type="checkbox"] {
+      border-color: $secondary-200;
+      background-color: $secondary-100;
+    }
+
+    &[type="radio"] {
+      border-color: $secondary-200;
+      background-color: $secondary-100;
+    }
+  }
+}
+
+//
+// Switch
+//
+
+.form-switch {
+  .form-check-input {
+    margin-right: $form-switch-check-input-margin-end;
+
+    &:checked {
+      &[disabled],
+      &:disabled {
+        background-position: $form-switch-checked-bg-position;
+
+        @if $enable-gradients {
+          background-image: escape-svg($form-switch-checked-disabled-bg-image), var(--#{$variable-prefix}gradient);
+        } @else {
+          background-image: escape-svg($form-switch-checked-disabled-bg-image);
+        }  
+      }
+    }
+  }
+}

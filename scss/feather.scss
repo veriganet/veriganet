@@ -1,0 +1,19 @@
+// Font sizes
+@each $size, $font-size in $font-sizes {
+    .fs-#{$size} {
+        &.feather {
+            width: $font-size;
+            height: $font-size;
+        }
+    }
+}
+
+// Display font sizes
+@each $display, $font-size in $display-font-sizes {
+    .display-#{$display} {
+        &.feather {
+            width: $font-size;
+            height: $font-size;
+        }
+    }
+}

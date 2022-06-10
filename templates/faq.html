@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- start section -->
+<section class="bg-white py-70px">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="accordion custom-accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseOne" aria-expanded="false" aria-controls="faq-collapseOne">
+                  What is verigaNET BLOCK?
+              </button>
+            </h2>
+            <div class="accordion-collapse collapse" id="faq-collapseOne" aria-labelledby="faq-headingOne" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <p>
+                  verigaNET BLOCK is very lean and lightweight blockchain as a service managed by verigaNET.
+                </p>
+              </div><!-- end accordion-body -->
+            </div><!-- end accordion-accordion -->
+          </div><!-- end accordion-item -->
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseTwo" aria-expanded="false" aria-controls="faq-collapseTwo">
+                  Which blockchain technology verigaNET BLOCK is based on?
+              </button>
+            </h2>
+            <div class="accordion-collapse collapse" id="faq-collapseTwo" aria-labelledby="faq-headingTwo" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <p>
+                  verigaNET BLOCK is based on XNO blockchain technology.
+                </p>
+                <p>
+                  Source code of XNO can be found at <a href="https://github.com/nanocurrency/nano-node">Github</a>
+                </p>
+              </div><!-- end accordion-body -->
+            </div><!-- end accordion-collapse -->
+          </div><!-- end accordion-item -->
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseThree" aria-expanded="false" aria-controls="faq-collapseThree">
+                What do I get by launching blockchain on verigaNET BLOCK?
+              </button>
+            </h2>
+            <div class="accordion-collapse collapse" id="faq-collapseThree" aria-labelledby="faq-headingThree" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <p>
+                  By launching blockchain on verigaNET BLOCK you will get fully independent blockchain managed by us.
+                </p>
+                <p>
+                  Beside the main blockchain, verigaNET BLOCK will also deploy following components:
+                  <ul>
+                    <li>
+                      <b>Web Wallet App:</b> Ready to use wallet app served over web
+                    </li>
+                    <li>
+                      <b>Block Explorer:</b> Ready to use block explorer
+                    </li>
+                    <li>
+                      <b>Peering Nodes:</b> Initial peering nodes to bootstrap and share bootstrap information with new nodes in blockchain network.
+                    </li>
+                    <li>
+                      <b>Representative Nodes:</b> Initial principle representative nodes.
+                    </li>
+                    <li>
+                      <b>REST API Service:</b> Native REST API endpoint service to interact with blockchain.
+                    </li>
+                    <li>
+                      <b>Binaries:</b> Binaries to run nodes at outside verigaNET infrastructure.
+                    </li>
+                  </ul>
+                </p>
+              </div><!-- end accordion-body -->
+            </div><!-- end accordion-collapse -->
+          </div><!-- end accordion-item -->
+
+        </div><!-- end accordion -->
+      </div><!-- end col -->
+    </div><!-- end row -->
+  </div><!-- end container -->
+</section>
+<!-- end section -->
+{% endblock %}

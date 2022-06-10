@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="verigaNET Blockchain for everyone">
+    <meta name="author" content="verigaNET Inc.">
+    <meta name="robots" content="all,follow">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/img/favicons/apple-icon-180x180.png'| asseturl }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/img/favicons/favicon-32x32.png'| asseturl }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/img/favicons/favicon-16x16.png'| asseturl }}">
+    <!-- vendor css File-->
+    <link href="{{ '/vendors/@fortawesome/fontawesome-free/css/all.min.css'| asseturl }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="{{ '/vendors/@fancyapps/fancybox/jquery.fancybox.min.css'| asseturl }}" rel="stylesheet">
+    <link href="{{ '/vendors/swiper/swiper-bundle.min.css'| asseturl }}" rel="stylesheet">
+    <link href="{{ '/vendors/aos/aos.css'| asseturl }}" rel="stylesheet">
+    <!-- css File-->
+    <link href="{{ '/css/style.css'| asseturl }}" rel="stylesheet">
+    <title>verigaNET - Blockchain for everyone</title>
+  </head>
+  <body>
+    <header {% if this._path == '/' %} class="position-relative" {% else %} class="bg-light" {% endif %}>
+        <img class="img-fluid position-absolute d-none d-lg-inline-block top-0 end-0 z-index-n1" src="{{ '/img/landings/header-sass-bg.svg'| asseturl }}" alt="" />
+        <img class="img-fluid position-absolute d-none d-md-inline-block d-lg-none top-0 end-0 z-index-n1" src="{{ '/img/landings/header-sass-bg-md.svg'| asseturl }}" alt="" />
+        <img class="img-fluid position-absolute d-inline-block d-md-none top-0 end-0 z-index-n1" src="{{ '/img/landings/header-sass-bg-sm.svg'| asseturl }}" alt="" />
+
+        {% include "partials/nav.html" %}
+
+        {% if this._path == '/' %}
+            {% include "partials/welcome.html" %}
+        {% elif this._path == '/services' %}
+            {% include "partials/welcome-services.html" %}
+        {% elif this._path == '/whitepaper' %}
+            {% include "partials/welcome-whitepaper.html" %}
+        {% elif this._path == '/support' %}
+            {% include "partials/welcome-support.html" %}
+        {% elif this._path == '/contact' %}
+            {% include "partials/welcome-contact.html" %}
+        {% elif this._path == '/contactus' %}
+            {% include "partials/welcome-contactus.html" %}
+        {% elif this._path == '/getstarted' %}
+            {% include "partials/welcome-getstarted.html" %}
+        {% elif this._path == '/faq' %}
+            {% include "partials/welcome-faq.html" %}
+        {% elif this._path == '/about' %}
+            {% include "partials/welcome-about.html" %}
+        {% endif %}
+    </header>
+
+    {% if this._path == '/' %}
+    {% include "partials/features.html" %}
+    {% endif %}
+
+    {% block content %}
+
+    <style>
+    .img-baas {
+      image-rendering: pixelated;
+    }
+    </style>
+    <section class="pt-40px pt-lg-110px pb-50px pb-lg-120px">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-6 pt-90px">
+            <h2>Blockchain as a Service</h2>
+            <hr />
+            <p>Launch your own blockchain and access it immediately.</p>
+            <hr />
+            <p>Integrate your blockchain with powerful native REST API endpoint.</p>
+            <hr />
+            <p>Take advantage of web and mobile wallet services.</p>
+            <hr />
+          </div>
+          <div class="col-6 col-md-6">
+            <img class="img-fluid img-baas" src="{{ '/img/baas_infra.png'| asseturl }}" alt="verigaNET Blockchain as a Service Infrastructure" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% endblock%}
+
+    {% include "partials/footer.html" %}
+
+    <!-- Javascript vendors-->
+    <script src="{{ '/vendors/jquery/jquery.min.js'| asseturl }}"></script>
+    <script src="{{ '/vendors/bootstrap/js/bootstrap.bundle.min.js'| asseturl }}"></script>
+    <script src="{{ '/vendors/@fancyapps/fancybox/jquery.fancybox.min.js'| asseturl }}"></script>
+    <script src="{{ '/vendors/swiper/swiper-bundle.min.js'| asseturl }}"></script>
+    <script src="{{ '/vendors/feather-icons/feather.min.js'| asseturl }}"></script>
+    <script src="{{ '/vendors/masonry-layout/masonry.pkgd.min.js'| asseturl }}"></script>
+    <script src="{{ '/vendors/mapbox-gl/mapbox-gl.js'| asseturl }}"></script>
+    <script src="{{ '/vendors/countup.js/countUp.umd.js'| asseturl }}"></script>
+    <script src="{{ '/vendors/imagesloaded/imagesloaded.pkgd.min.js'| asseturl }}"></script>
+    <script src="{{ '/vendors/isotope-layout/isotope.pkgd.min.js'| asseturl }}"></script>
+    <script src="{{ '/vendors/jquery-countdown/jquery.countdown.min.js'| asseturl }}"></script>
+    <script src="{{ '/vendors/sticky-js/sticky.min.js'| asseturl }}"></script>
+    <script src="{{ '/vendors/aos/aos.js'| asseturl }}"></script>
+    <!-- Javascript File-->
+    <script src="{{ '/js/theme.js'| asseturl }}"></script>
+    <!--<script src="assets/js/language.js"></script>-->
+  </body>
+</html>
+

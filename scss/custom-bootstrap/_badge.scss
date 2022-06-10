@@ -1,0 +1,32 @@
+// Rounded
+.badge-rounded-circle {
+    border-radius: $badge-rounded-circle;
+    padding: $badge-rounded-circle-padding;
+    width: $badge-rounded-circle-width;
+    height: $badge-rounded-circle-width;
+    line-height: $badge-rounded-circle-width;
+    .feather {
+        width: $badge-rounded-circle-icon-size;
+        height: $badge-rounded-circle-icon-size;
+    }
+    // small
+    &.badge-sm {
+        height: $badge-rounded-circle-width-sm;
+        width: $badge-rounded-circle-width-sm;
+        line-height: $badge-rounded-circle-width-sm;
+        .feather {
+            width: $badge-rounded-circle-icon-size-sm;
+            height: $badge-rounded-circle-icon-size-sm;
+        }
+    }
+    // large
+    &.badge-lg {
+        height: $badge-rounded-circle-width-lg;
+        width: $badge-rounded-circle-width-lg;
+        line-height: $badge-rounded-circle-width-lg;
+        .feather {
+            width: $badge-rounded-circle-icon-size-lg;
+            height: $badge-rounded-circle-icon-size-lg;
+        }
+    }
+}

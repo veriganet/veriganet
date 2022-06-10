@@ -14,8 +14,8 @@ profiles:
             chartPath: ./helm-charts/veriganet
             namespace: veriganet-stg
             setValues:
-              image.tag: stg
-              ingress.host: stg.veriga.net
+              web.image.tag: stg
+              web.ingress.host: stg.veriga.net
               vault.role: veriganet
   - name: prod
     deploy:
@@ -25,5 +25,5 @@ profiles:
             chartPath: ./helm-charts/veriganet
             namespace: veriganet
             setValues:
-              image.tag: latest
-              ingress.host: veriga.net
+              web.image.tag: latest
+              web.ingress.host: veriga.net
